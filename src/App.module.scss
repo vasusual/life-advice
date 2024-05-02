@@ -1,0 +1,81 @@
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 40vh;
+  width: 40vw;
+  border: 5px solid rgb(3, 92, 92);
+  border-radius: 0.5rem;
+  background-color: hsl(217, 19%, 24%);
+}
+
+.TextBox {
+  max-width: 40rem;
+}
+
+.Button {
+  background-color: hsl(174, 92%, 30%);
+  border: 2px solid rgb(3, 92, 92);
+  border-radius: 30px;
+  box-shadow: #042c2c 4px 4px 0 0;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.Button:hover {
+  background-color: #fff;
+  color: rgb(3, 92, 92);
+}
+
+h1,
+.Number,
+.Advice {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.Number {
+  color: rgb(3, 92, 92);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Advice {
+  color: #fff;
+  font-size: 30px;
+}
