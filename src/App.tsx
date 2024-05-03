@@ -34,7 +34,7 @@ function App() {
       const advice = await response.json();
       setData(advice);
       setError(null);
-    } catch (err: any) {
+    } catch (err) {
       setError(err.message);
       setData(null);
     } finally {
